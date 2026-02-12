@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Growth Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-light">
+
+
+<header class="bg-primary text-white text-center py-3 mb-4">
+    <img src="logo.png" alt="Logo" width="60">
+    <h1 class="d-inline-block ms-2">Investment Growth Calculator</h1>
+</header>
+
+<div class="container">
+    
+<p>
+     Welcome! This calculator helps you estimate how much your investment will grow 
+    by the year you plan to retire. Enter your initial investment, the expected 
+    annual interest rate, and your retirement year to see the future value of your money.
+</p>
+
+    <div class="card p-4 shadow mb-4">
+       <form id="investmentForm">
+
+    <div class="mb-3">
+    <label>Initial Investment ($)</label>
+     <input type="text" id="initialInvestment" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+     <label>Annual Interest Rate (%)</label>
+     <input type="text" id="interestRate" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label>Year of Retirement</label>
+     <input type="text" id="retirementYear" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">
+     Calculate
+    </button>
+</form>
+    </div>
+    <p id="result" class="text-success fs-5" hidden></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
