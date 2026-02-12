@@ -1,0 +1,15 @@
+h1 {
+    color: rgb(255, 255, 255);
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#result {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label {
+    font-weight: 500;
+}
